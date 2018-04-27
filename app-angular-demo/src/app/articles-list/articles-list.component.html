@@ -1,3 +1,15 @@
+<div class="ui grid">
+    <div class="ui four column grid">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column">
+            <app-list-filter (filter)="filter($event)"></app-list-filter>
+        </div>
+        
+    </div>
+    
+</div>
+
 <div class="ui grid posts">
   <app-article *ngFor="let article of articles" [article]="article" class="row"></app-article>
 </div>

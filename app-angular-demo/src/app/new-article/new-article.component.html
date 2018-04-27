@@ -1,0 +1,22 @@
+<div class="container">  
+  <div class="row">  
+      <div class="form_bg">  
+          <form #newArticleForm='ngForm' (ngSubmit)="Add(newArticleForm)" >  
+               <h2 class="text-center">New Article</h2>  
+              <br/>  
+              <div class="form-group"> 
+                  <label>Title</label>
+                  <input type="text" class="form-control" placeholder="Title" name="Title" ngModel >   
+              </div>  
+              <div class="form-group">
+                  <label>Link</label>  
+                  <input type="text" class="form-control"  placeholder="Link" name="Link" ngModel >  
+              </div>
+              <br/>  
+              <div class="align-center">  
+                  <button type="submit" class="btn btn-default" id="Add"  >Add</button>  
+              </div>  
+          </form>  
+      </div>  
+  </div>  
+</div>  
